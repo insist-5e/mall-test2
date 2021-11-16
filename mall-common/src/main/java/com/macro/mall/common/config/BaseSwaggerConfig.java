@@ -19,7 +19,8 @@ import java.util.List;
  */
 public abstract class BaseSwaggerConfig {
 
-    @Bean    public Docket createRestApi() {
+    @Bean
+    public Docket createRestApi() {
         SwaggerProperties swaggerProperties = swaggerProperties();
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo(swaggerProperties))
